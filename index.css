@@ -1,0 +1,79 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #010001;
+}
+
+.upperPart,.lowerpart {
+    margin-top: 1em;;
+    display: flex;
+    width: 100vw;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+button {
+    display: flex;
+    width: 22%;
+    height: 2em;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #343234;
+    color: #ffffff;
+    transition: background-color 0.7s ease;
+}
+button:hover {
+    background-color: white;
+    color: black;
+}
+.body{
+    
+    display: flex;
+    margin-top: 18%;
+    justify-content: center;
+    align-items: center;
+    
+}
+.circle {
+    display: flex;
+    width:200px;
+    height: 200px;
+    border: 2px solid red;
+    border-radius: 50%;
+    animation: circleColorChange 1s infinite;
+    transition: border-radius 0.3s ease;
+}
+@keyframes circleColorChange {
+    0% {
+        background-color: #f5f4a4;
+    }
+    25% {
+        background-color: #c87922;
+    }
+    50% {
+        background-color: #aa302a;
+    }
+    75% {
+        background-color: #9459c6;
+    }
+    100% {
+        background-color: #f3f5b2;
+    }
+}
+.circle:hover {
+    border-radius: 0%;
+}
+.lowerpart{
+    margin-top: 18%;
+}
+/* @media (max-width:320px){
+    .circle {
+        transition: border-radius 0.3s ease;
+
+    }
+    .circle.hover{
+        border-radius: 0%;
+
+    }
+} */
